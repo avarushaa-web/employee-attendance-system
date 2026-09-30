@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Attendance System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Employee Attendance System</h1>
+    <p>Manage employees and daily attendance</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Add Employee</h2>
+      <form id="employee-form">
+        <input id="employee-name" type="text" placeholder="Employee name" required>
+        <input id="employee-id" type="text" placeholder="Employee ID" required>
+        <button type="submit">Add Employee</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Mark Attendance</h2>
+      <label for="attendance-date">Date</label>
+      <input id="attendance-date" type="date">
+      <div id="employee-list"></div>
+    </section>
+
+    <section class="card">
+      <h2>Attendance Records</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Employee ID</th>
+              <th>Name</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="attendance-records"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
